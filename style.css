@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+    color: #ff6699;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.heading .line {
+    flex: 1;
+    height: 1px;
+    background-color: #cccc;
+    max-width: 14%;
+}
+
+/* Card Styles */
+.card-container {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    width: 350px;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-button {
+    display: flex;
+    align-items: center;
+}
+
+.radio-button input {
+    margin-right: 10px;
+}
+
+.radio-button label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff6b82;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: transparent;
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 2.4px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: #ff6b82;
+    border-radius: 50%;
+}
+
+input[type="radio"]:hover {
+    border-color: #ff6b82;
+}
+
+.discount {
+    color: #ffffff;
+    background-color: #ff6b82;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 1px;
+    margin-right: 120px;
+}
+
+.price {
+    font-size: 14.46px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 8px;
+}
+
+.strikethrough-price {
+    font-size: 10px;
+    color: #888;
+    text-decoration: line-through;
+    margin: -12px 0px 0px 272px;
+}
+
+.standard-price {
+    font-size: 14px;
+    color: #000;
+    margin: 0px 0px 0px 35px;
+}
+
+.dropdown-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.dropdown-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.dropdown-row label {
+    font-size: 10px;
+    margin-left: 20px;
+    display: block;
+}
+
+.dropdown-row select {
+    width: calc(40% - 35px);
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+}
+
+.dropdown-labels {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.dropdown-labels label {
+    font-size: 10px;
+    font-weight: 400;
+    margin-right: 100px;
+}
+
+/* Footer Styles */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 385px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.footer-left {
+    font-weight: bold;
+    color: #ff6b82;
+}
+
+.footer-right {
+    color: #000;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    width: 390px;
+    margin-top: 10px;
+}
+
+.add-to-cart button {
+    padding: 10px 20px;
+    background-color: #ff6b82;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.add-to-cart button .plus-sign {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.add-to-cart button:hover {
+    background-color: #ff4c66;
+}
+
+.most-popular-tag {
+    position: absolute;
+    top: -6px;
+    right: 5px;
+    background-color: #ff4c66;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .card-container {
+        width: 90%;
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .strikethrough-price {
+        font-size: 12px;
+    }
+}

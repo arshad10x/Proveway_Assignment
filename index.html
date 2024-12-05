@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interactive Cards</title>
+        <!-- Link to external CSS -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- Main heading for the page -->
+        <header class="heading">
+        <span class="line"></span> YAY! It's BOGO <span class="line"></span>
+    </header>
+
+        <main>
+            <!-- Product Card Section -->
+            <section class="product-cards">
+                <!-- Card 1 -->
+                <article class="card-container">
+                    <header class="card-header">
+                        <!-- Radio button to select 1 unit -->
+                        <div class="radio-button">
+                            <input type="radio" name="unit" id="unit1" data-price="10" />
+                            <label for="unit1">1 Unit</label>
+                        </div>
+                        <!-- Discount and price display -->
+                        <div class="discount">10% Off</div>
+                        <div class="price">$10.00 USD</div>
+                    </header>
+                    <!-- Standard price and strikethrough for the original price -->
+                    <p class="standard-price">Standard Price</p>
+                    <p class="strikethrough-price">$24.00 USD</p>
+                    <!-- Dropdown container for selecting size and color -->
+                    <div class="dropdown-container" id="dropdown1">
+                        <div class="dropdown-labels">
+                            <label for="size1">Size</label>
+                            <label for="color1">Color</label>
+                        </div>
+                        <!-- Dropdown rows for options -->
+                        <div class="dropdown-row">
+                            <label for="size1">#1</label>
+                            <select id="size1">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color1">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="dropdown-row">
+                            <label for="size2">#2</label>
+                            <select id="size2">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color2">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-container">
+                    <header class="card-header">
+                        <!-- Radio button to select 2 units -->
+                        <div class="radio-button">
+                            <input type="radio" name="unit" id="unit2" data-price="18" />
+                            <label for="unit2">2 Unit</label>
+                        </div>
+                        <!-- Discount and price display -->
+                        <div class="discount">20% Off</div>
+                        <div class="price">$18.00 USD</div>
+                        <!-- Most popular tag -->
+                        <div class="most-popular-tag">Most Popular</div>
+                    </header>
+                    <!-- Standard price and strikethrough for the original price -->
+                    <p class="standard-price">&nbsp</p>
+                    <p class="strikethrough-price">$24.00 USD</p>
+                    <!-- Dropdown container for selecting size and color -->
+                    <div class="dropdown-container" id="dropdown2">
+                        <div class="dropdown-labels">
+                            <label for="size3">Size</label>
+                            <label for="color3">Color</label>
+                        </div>
+                        <div class="dropdown-row">
+                            <label for="size3">#1</label>
+                            <select id="size3">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color3">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="dropdown-row">
+                            <label for="size4">#2</label>
+                            <select id="size4">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color4">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-container">
+                    <header class="card-header">
+                        <!-- Radio button to select 3 units -->
+                        <div class="radio-button">
+                            <input type="radio" name="unit" id="unit3" data-price="24" />
+                            <label for="unit3">3 Unit</label>
+                        </div>
+                        <!-- Discount and price display -->
+                        <div class="discount">15% Off</div>
+                        <div class="price">$24.00 USD</div>
+                    </header>
+                    <!-- Standard price and strikethrough for the original price -->
+                    <p class="standard-price">&nbsp</p>
+                    <p class="strikethrough-price">$35.00 USD</p>
+                    <!-- Dropdown container for selecting size and color -->
+                    <div class="dropdown-container" id="dropdown3">
+                        <div class="dropdown-labels">
+                            <label for="size5">Size</label>
+                            <label for="color5">Color</label>
+                        </div>
+                        <div class="dropdown-row">
+                            <label for="size5">#1</label>
+                            <select id="size5">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color5">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="dropdown-row">
+                            <label for="size6">#2</label>
+                            <select id="size6">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color6">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">Free Delivery</div>
+                <div class="footer-right" id="totalPrice">Total: $00.00 USD</div>
+            </div>
+            <div class="add-to-cart">
+                <button><span class="plus-sign">+</span> Add to Cart</button>
+            </div>
+        </footer>
+
+        <!-- Link to external JavaScript -->
+        <script src="./script.js"></script>
+    </body>
+</html>
