@@ -1,4 +1,3 @@
-// Select all card containers and the total price element in the footer
 const cards = document.querySelectorAll(".card-container");
 const totalPriceElement = document.getElementById("totalPrice");
 
@@ -21,7 +20,7 @@ cards.forEach((card) => {
             if (otherCard !== card) {
                 otherDropdown.style.display = "none";
                 otherRadio.checked = false;
-                otherCard.style.backgroundColor = "#ffffff"; // Reset background color
+                otherCard.style.backgroundColor = "#ffffff"; 
             }
         });
 
